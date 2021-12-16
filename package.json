@@ -1,6 +1,6 @@
 {
   "homepage": "https://github.com/tihao/react-mypc",
-  "name": "my-app",
+  "name": "react-mypc",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
