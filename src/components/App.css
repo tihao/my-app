@@ -1,0 +1,1250 @@
+body {
+  text-align: center;
+  max-height: 100vh;
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button { 
+	-webkit-appearance: none;
+}
+
+.lockscreen {
+  background: url(../images/lockscreen.jpg) no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+
+.lockscreen-blur {
+  background: url(../images/lockscreen.jpg) no-repeat;
+  background-size: cover;
+  height: 100vh;
+  filter: brightness(75%);
+}
+
+.lockscreen .datetime {
+  position: relative;
+  font-size: 35px;
+  padding-top: 100px;
+}
+
+.login .content {
+  display: block;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  
+}
+
+.login .content > img {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  
+}
+.login .content > p{
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+}
+
+.login .content > input {
+  height: 30px;
+  width: 200px;
+}
+.login .content > p ~ p {
+  font-size: 15px;
+}
+
+.login .guestlogin:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+.error {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(243, 235, 235);
+  width: 15%;
+  height: 120px;
+}
+
+.homescreen {
+  background: url(../images/wallpaper.jpg) no-repeat;
+  background-size: cover;
+  height: 100vh;
+  filter: brightness(100%);
+}
+
+.screen-icon {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: 96%;
+}
+
+.desktop-icon {
+  width: 100px;
+  height: 100px;
+  margin: 3px;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.desktop-icon > p {
+  color: black;
+  font-size: 10px;
+  position: relative;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.desktop-icon:hover {
+  background-color: rgb(241, 228, 228);
+}
+.fas {
+  font-size: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
+}
+.taskbar {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(20, 5%);
+  grid-template-rows: 1;
+  height: 4%;
+  background-color: rgb(235, 222, 222);
+}
+
+.fa-wifi:hover {
+  background-color: rgb(247, 242, 235);
+}
+
+.taskbar .datetime {
+  grid-column: 20/21;
+}
+
+.taskbar .datetime > p{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.taskbar > div:hover {
+  background-color: rgb(247, 242, 235);
+}
+.fa-power-off {
+  font-size: 30px;
+  grid-column: 1;
+}
+
+.fa-power-off:hover {
+  background-color: rgb(247, 242, 235);
+}
+
+.taskbar .popup {
+  position: absolute;
+  grid-column: 20/21;
+  width: 100%;
+  top: -4.5rem;
+  background-color: gray;
+  box-shadow: 2px 2px black;
+}
+.screen-icon .app-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid black;
+  width: 80%;
+  height: 80%;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  background-color: rgb(238, 224, 224);
+}
+
+.menu-bar {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 15px;
+  background-color: rgb(238, 224, 224);
+  border-top-left-radius: 40px;
+
+}
+
+.menu-bar .fa-minus {
+  width: 50px;
+  height: 40px;
+  margin: 0;
+  position: relative;
+  color: gray;
+}
+
+.menu-bar .fa-window-restore {
+  position: relative;
+  width: 50px;
+  height: 40px;
+  margin: 0;
+  color: gray;
+  
+}
+
+.menu-bar .fa-times {
+  position: relative;
+  width: 50px;
+  margin: 0;
+  height: 40px;
+}
+.menu-bar .fa-times:hover {
+  background-color: rgb(235, 211, 211);
+}
+
+.thispc-content {
+  position: relative;
+  height: 90%;
+  background-color: #fff;
+}
+
+.thispc-content .path-container {
+  border: 1px solid black;
+  display: flex;
+  justify-content: flex-start;
+  height: 50px;
+  margin-top: 30px;
+  margin-left:50px;
+  margin-right: 50px;
+  background-color: #fff;
+}
+
+.path-container i {
+  height: 30px;
+  font-size: 30px;
+  margin: 0;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.path-container input {
+  width: 80%;
+  font-size: 20pt;
+  border: none;
+  outline: none;
+}
+
+.menu-hdd-container {
+  border-top: 1px solid black;
+  width: 100%;
+  height: 75%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-hdd-container .menu-desktop {
+  width: 20%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid black;
+}
+
+.menu-desktop button {
+  font-size: 20px;
+  height: 10%;
+  margin: 10px;
+}
+
+.menu-hdd-container .hdd {
+  width: 80%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.hdd button {
+  margin: 50px;
+  width: 35%;
+  height: 60px;
+  margin-left: 0;
+  display: flex;
+  flex-direction: row;
+  background-color: gainsboro;
+}
+
+.hdd button:hover {
+  background-color:black;
+  color: ghostwhite;
+}
+.hdd .fa-hdd {
+  margin-left: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.hdd label {
+  font-size: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.hdd label > p {
+  font-size: 10pt;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.hdd .progressbar {
+  background-color: black;
+  height: 10px;
+  width: 120px;
+  margin-left: 10px;
+}
+
+.hdd .progressbar > div {
+  background-color: red;
+  height: 10px;
+  width: 80%;
+}
+
+.hdd label > p ~ p {
+  font-size: 7pt;
+}
+
+.trashbin {
+  width: 70%;
+  height: 100%;
+}
+.calculator {
+  justify-content: center;
+}
+
+.folder {
+  width: 70%;
+  height: 100%;
+}
+.denied-message {
+  border: 1px solid black;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.denied-message button {
+  position: relative;
+  width: 10%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.outside {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: 1px solid black;
+}
+
+.outside-denied {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: transparent;
+  border: 1px solid black;
+}
+
+.calculator .inner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-gap: 10px 10px;
+  grid-template-areas:
+    "d d d d"
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . equal"
+    ". . . equal";
+  border-style: solid;
+  border: 1px solid green;
+  padding: 1rem;
+  width: 25rem;
+  height: 40rem;
+  margin: auto auto;
+}
+
+.calculator .display {
+  color: black;
+  grid-area: d;
+  display: flex;
+  background: gray;
+  align-items: center;
+  justify-content: right;
+  font-size: 2rem;
+}
+
+.calculator .btn {
+  font-size: 30px;
+  width: auto;
+  cursor: pointer;
+  color: gray;
+}
+
+
+.calculator .equal{
+  grid-area: equal;
+}
+
+.weather-container .container {
+  background-color: rgb(59, 151, 226);
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* Desktop */
+@media (min-width: 1025px) {
+  .weather {
+    width: 100%;
+    height: 85%;
+    margin:  0;
+  }
+
+  .fas {
+    font-size: 40px;
+  }
+
+  .screen-icon {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 95%;
+  }
+
+  .desktop-icon {
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    flex-direction: column;
+  }
+  .desktop-icon > p {
+    margin-top: 5px;
+  }
+  .taskbar {
+    height: 5%;
+  }
+  
+  .hdd label {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: 50px;
+  }
+
+  .hdd label > p {
+    position: relative;
+ 
+    margin: 0;
+  }
+  .hdd label > p ~ p {
+    position: relative;
+    margin: 0;
+    margin-top: 5px;
+  }
+
+  .hdd .progressbar1 {
+    border: 1px solid rgb(138, 132, 132);
+    background-color: rgb(138, 132, 132);
+    position: relative;
+    height: 35%;
+    margin-left: 20px;
+  }
+
+  .hdd .progressbar1 > div {
+    background-color: red;
+    width: 80%;
+    margin: 0;
+    height: 100%;
+  }
+
+  .hdd .progressbar2 {
+    border: 1px solid rgb(138, 132, 132);
+    background-color: rgb(138, 132, 132);
+    position: relative;
+    height: 35%;
+    margin-left: 20px;
+  }
+
+  .hdd .progressbar2 > div {
+    background-color: blue;
+    width: 20%;
+    margin: 0;
+    height: 100%;
+  }
+
+
+  .flash-error {
+    background-color: red;
+  }
+  .outside-denied {
+    position: absolute;
+    width: 100%;
+    background-color: transparent;
+    
+    border: 1px solid rgb(211, 179, 179);
+  }
+  .weather {
+    height: 500px;
+  }
+  
+  .thispc-content {
+    height: 85%;
+  }
+  .trashbin {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    gap: 10px;
+  }
+
+  .trashbin .title {
+    height: 50px;
+    display: grid;
+    grid-template-columns: repeat(8, 12%);
+    grid-template-rows: 1;
+    border-bottom: 2px solid black;
+  }
+
+  .trashbin .title > p ~ p:nth-child(3) {
+    grid-column: 3/5;
+    grid-row: 1;
+ 
+  }
+  .trashbin .content {
+    height: 50px;
+    display: grid;
+    grid-template-columns: repeat(8, 12%);
+    grid-template-rows: 1;
+    background-color: rgb(223, 202, 202);
+  }
+
+  .trashbin .content:hover {
+    background-color: gray;
+  }
+  .trashbin .content > p ~ p:nth-child(3) {
+    grid-column: 3/5;
+    grid-row: 1;
+  }
+  .trashbin .content .fa-file-alt {
+    font-size: 40px;
+    grid-column: 1;
+    grid-row: 1;
+    margin: 0;
+    height: 40px;
+    width: 30px;
+    margin-left: 60px;
+    margin-top: 5px;
+  }
+
+  .folder {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    gap: 10px;
+   
+  }
+  .folder .scroll {
+    overflow-y: auto;
+    overflow-x: none;
+  }
+  .folder .title {
+    height: 50px;
+    display: grid;
+    grid-template-columns: repeat(6, 18%);
+    grid-template-rows: 1;
+    border-bottom: 2px solid black;
+  }
+  .folder .content {
+    height: 50px;
+    display: grid;
+    grid-template-columns: repeat(6, 18%);
+    grid-template-rows: 1;
+    background-color: rgb(223, 202, 202);
+  }
+  .folder .content .fas {
+    font-size: 40px;
+    grid-column: 1;
+    grid-row: 1;
+    margin: 0;
+    height: 40px;
+    width: 30px;
+    margin-left: 60px;
+    margin-top: 5px;
+  }
+  .folder .content .fab {
+    font-size: 40px;
+    grid-column: 1;
+    grid-row: 1;
+    margin: 0;
+    height: 40px;
+    width: 30px;
+    margin-left: 60px;
+    margin-top: 5px;
+  }
+  .folder .content:hover {
+    background-color: gray;
+  }
+  .calculator-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    width: 25%;
+    height: 70%;
+    border-top-left-radius: 40px;
+    background-color: rgb(25, 108, 185);
+  }
+  .calculator-container .menu-bar {
+    background-color: rgb(25, 108, 185);
+
+  }
+  .calculator-container .calculator {
+    position: relative;
+    width: 100%;
+  }
+  .calculator-container .menu-bar .fa-minus {
+    display: none;
+  }
+  .calculator-container .menu-bar .fa-window-restore {
+    display: none;
+  }
+  .calculator-container .calculator .inner {
+    background-color: rgb(206, 188, 26);
+    font-size: 30px;
+    border-radius: 10px;
+    width: 80%;
+    height: 25rem;
+    position: relative;
+  }
+  .calculator-container .calculator .inner .display {
+    border: 1px solid rgb(190, 90, 90);
+    position: relative;
+  }
+  .app-container .menu-bar .fa-arrow-left{
+    position: absolute;
+    width: 4rem;
+    left: 2rem;
+    margin: 0;
+    height: 3.5rem;
+  }
+
+  .app-container .menu-bar .fa-arrow-left:hover{
+    background-color: rgb(235, 211, 211);
+  }
+  .weather-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    width: 80%;
+    height: 90%;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    background-color: rgb(238, 224, 224);
+  }
+
+  .weather-container .container {
+    background-size: cover;
+    height: 35rem;
+    width: 100%;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: whitesmoke;
+  }
+  .weather-container .container .search {
+    font-size: 15pt;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: 3rem;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1rem;
+
+  }
+
+  .weather-container .container .current-weather {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 3rem;
+    background-color: cadetblue;
+    margin-bottom: 2rem;
+  }
+
+  .weather-container .container .current-weather .location {
+    position: relative;
+    font-size: 3rem;
+    margin-left: 2rem;
+    width: 35%;
+    color: #fff;
+    text-shadow: 2px 2px black;
+  }
+
+  .weather-container .container .current-weather .detail {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(44, 135, 138);
+    text-align: left;
+    width: 10rem;
+    padding-left: 1rem;
+
+  }
+  .weather-container .container .current-weather .content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    background-color: rgb(44, 135, 138);
+  }
+
+  .weather-container .container .current-weather .content > img {
+    position: relative;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .weather-container .container .current-weather .content p {
+    position: relative;
+    width: 30%;
+    margin: 0;
+    font-size: 2rem;
+    margin-left: 6.5rem;
+    text-shadow: 2px 2px black;
+  }
+  .weather-container .container .current-weather .content p:nth-child(3) {
+    position: relative;
+  }
+
+  
+  .weather-container .container .forecast-card {
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    color: black;
+ 
+  }
+  .weather-container .container .forecast-card .card {
+    border: 3px solid black;
+    border-radius: 1rem;
+    width: 30%;
+    height: 95%;
+    background-color: cadetblue;
+  }
+
+  .weather-container .container .forecast-card .card img {
+    width: 70%;
+  }
+
+  .weather-container .container .weather-header {
+    display: flex;
+    flex-direction: row;
+  }
+  .weather-container .container .weather-header > p {
+    margin: auto;
+    margin-right: 1rem;
+  }
+
+  .weather-container .container .switch-button {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 36px;
+    border: 1px solid white;
+    margin-top: auto; 
+    margin-bottom: auto;
+  }
+    
+  .weather-container .container .switch-button input {
+    opacity: 0;
+    height: 0;
+    width: 0;
+  }
+    
+    .weather-container .container .switch-button .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: red;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+    
+    .weather-container .container .switch-button .slider:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+    
+    .weather-container .container .switch-button input:checked + .slider {
+      background-color: lightgreen;
+    }
+    .weather-container .container .switch-button input:checked + .slider:before {
+      background-color: black;
+    }
+    
+    .weather-container .container .switch-button input:checked + .slider:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+    }
+    
+    /* Rounded sliders */
+    .weather-container .container .switch-button .slider.round {
+      border-radius: 34px;
+    }
+    
+    .weather-container .container .switch-button .slider.round:before {
+      border-radius: 50%;
+    }
+    .game-container {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: 1px solid black;
+      width: 99%;
+      height: 99%;
+      border-top-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+      background-color: rgb(238, 224, 224);
+    }
+    .game-container .pokemon {
+      width: 100%;
+      height: 85vh;
+      margin-top: 2.5rem;
+      position: absolute;
+      background-color: white;
+    }
+    .game-container .pokemon p:nth-child(1) {
+      font-size: 2rem;
+    }
+    .pokemon .container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 5rem;
+    }
+    .pokemon-card {
+      border: 1px solid black;
+      width: 100%;
+      background-color: black;
+    }
+
+    .pokemon-card:hover{
+      background-color: white;
+    }
+    .pokemon-card:hover .name{
+      color: black;
+    }
+    .pokemon-card:hover .img{
+      background-color: black;
+    }
+    .pokemon-card:hover .stats{
+      color: rgb(3, 82, 3);
+    }
+    .pokemon-card .name {
+      font-size: 4rem;
+      color: white;
+    }
+
+    .pokemon-card .img {
+      border: 1px solid red;
+      background-color: white;
+      border-radius: 3rem;
+    }
+
+    .pokemon-card .stats {
+      color: rgb(30, 211, 30);
+    }
+
+    .pokemon .battle {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      background-image: url('../images/scene.jpg');
+      
+    }
+    .pokemon .battle .player{
+      width: 100%;
+      height: 45%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+
+    .pokemon .battle .image{
+      justify-content: center;
+      width: 20%;
+      height: 80%;
+    }
+
+    .pokemon .battle .player .image{
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+    }
+    .pokemon .battle .enemy{
+      width: 100%;
+      height: 45%;
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+   
+    .pokemon .battle .command-container {
+      width: 100%;
+      height: 20%;
+      background-color: gray;
+      display: flex;
+      position: relative;
+    }
+
+    .pokemon .battle .command-container .text{
+      width: 30%;
+      font-size: 2rem;
+    }
+    .pokemon .battle .command-container .cmd-btn{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .pokemon .battle .command-container .cmd-btn button {
+      flex: 1;
+    }
+
+    .pokemon .battle .card {
+      width: 30rem;
+      height: 10rem;
+      margin: 0;
+      align-items: center;
+      text-align: center;
+    }
+    .pokemon .battle .card > p {
+      font-size: 2.5rem;
+      color: white;
+      margin: 0;
+    }
+    .pokemon .result {
+      font-size: 5rem;
+    }
+    .pokemon .battle .player .card {
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+    .pokemon .battle .process {
+      width: 80%;
+      height: 3rem;
+      margin: 0;
+      margin-top: 1rem;
+    }
+
+    .pokemon .battle .attack-scene {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      transform: translate(-50%,-50%);
+      background-color: black;
+    }
+
+    .pokemon .battle .attack-scene video {
+      width: 100%;
+      height: 100%;
+    }
+
+    .pokemon .battle .attack-scene img {
+      position: absolute;
+      width: 30%;
+      height: 60%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      opacity: 0.5;
+    }
+  
+    .pokemon .battle .blink {
+      animation: blink 2s;
+    }
+    @keyframes blink {
+      0% {
+          opacity: 1;
+      }
+      25% {
+          opacity: 0.5;
+      }
+      50% {
+          opacity: 0.2;
+      }
+      100% {
+          opacity: 1;
+      }
+    }
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1632px) {
+  .weather-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    width: 80%;
+    height: 95%;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    background-color: rgb(238, 224, 224);
+  }
+
+  .weather-container .container {
+    background-size: cover;
+    height: 48rem;
+    width: 100%;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: whitesmoke;
+  }
+
+  .weather-container .container .search {
+    font-size: 15pt;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: 3rem;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1rem;
+    border: 1px solid white;
+  }
+
+  .weather-container .container .current-weather {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 3rem;
+    background-color: cadetblue;
+  }
+
+  .weather-container .container .current-weather .location {
+    position: relative;
+    font-size: 3rem;
+    margin-left: 3rem;
+    width: 30%;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #fff;
+    text-shadow: 2px 2px black;
+  }
+
+  .weather-container .container .current-weather .detail {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(44, 135, 138);
+    text-align: left;
+    width: 10rem;
+    padding-left: 1rem;
+
+  }
+  .weather-container .container .current-weather .content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: rgb(44, 135, 138);
+  }
+
+  .weather-container .container .current-weather .content > img {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .weather-container .container .current-weather .content p {
+    width: 100%;
+    font-size: 2rem;
+    margin: 0;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px black;
+  }
+
+  
+  .weather-container .container .forecast-card {
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    color: black;
+ 
+  }
+  .weather-container .container .forecast-card .card {
+    border: 3px solid black;
+    border-radius: 1rem;
+    width: 30%;
+    height: 80%;
+    background-color: cadetblue;
+  }
+
+  .weather-container .container .forecast-card .card img {
+    width: 70%;
+  }
+  
+  .weather-container .container .switch-button {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.weather-container .container .switch-button input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.weather-container .container .switch-button .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.weather-container .container .switch-button .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.weather-container .container .switch-button input:checked + .slider {
+  background-color: #2196F3;
+}
+
+.weather-container .container .switch-button input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+.weather-container .container .switch-button input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.weather-container .container .switch-button .slider.round {
+  border-radius: 34px;
+}
+
+.weather-container .container .switch-button .slider.round:before {
+  border-radius: 50%;
+}
+.calculator-container .calculator .inner {
+  background-color: rgb(206, 188, 26);
+  font-size: 30px;
+  border-radius: 10px;
+  width: 80%;
+  height: 35rem;
+  position: relative;
+}
+}
