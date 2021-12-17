@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/react-mypc/static/css/main.b6780578.chunk.css",
+    "main.js": "/react-mypc/static/js/main.5f351813.chunk.js",
+    "main.js.map": "/react-mypc/static/js/main.5f351813.chunk.js.map",
+    "runtime-main.js": "/react-mypc/static/js/runtime-main.03603073.js",
+    "runtime-main.js.map": "/react-mypc/static/js/runtime-main.03603073.js.map",
+    "static/js/2.4f2eb8d9.chunk.js": "/react-mypc/static/js/2.4f2eb8d9.chunk.js",
+    "static/js/2.4f2eb8d9.chunk.js.map": "/react-mypc/static/js/2.4f2eb8d9.chunk.js.map",
+    "index.html": "/react-mypc/index.html",
+    "static/css/main.b6780578.chunk.css.map": "/react-mypc/static/css/main.b6780578.chunk.css.map",
+    "static/js/2.4f2eb8d9.chunk.js.LICENSE.txt": "/react-mypc/static/js/2.4f2eb8d9.chunk.js.LICENSE.txt",
+    "static/media/blastoise.8b6db637.png": "/react-mypc/static/media/blastoise.8b6db637.png",
+    "static/media/bubbles.60d929db.mp4": "/react-mypc/static/media/bubbles.60d929db.mp4",
+    "static/media/charizard.87eaa3b1.png": "/react-mypc/static/media/charizard.87eaa3b1.png",
+    "static/media/fire-video.57d09b90.mp4": "/react-mypc/static/media/fire-video.57d09b90.mp4",
+    "static/media/image.70c7a5de.jpg": "/react-mypc/static/media/image.70c7a5de.jpg",
+    "static/media/App.css": "/react-mypc/static/media/wallpaper.a29a3234.jpg",
+    "static/media/sunfire.bfbb45b2.mp4": "/react-mypc/static/media/sunfire.bfbb45b2.mp4",
+    "static/media/wave1.abc3c456.mp4": "/react-mypc/static/media/wave1.abc3c456.mp4"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.03603073.js",
+    "static/js/2.4f2eb8d9.chunk.js",
+    "static/css/main.b6780578.chunk.css",
+    "static/js/main.5f351813.chunk.js"
+  ]
+}
